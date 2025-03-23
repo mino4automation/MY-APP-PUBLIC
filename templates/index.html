@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    
+    <!-- Form to input two numbers -->
+    <form method="POST">
+        <label for="num1">Number 1:</label>
+        <input type="text" id="num1" name="num1" required><br><br>
+        <label for="num2">Number 2:</label>
+        <input type="text" id="num2" name="num2" required><br><br>
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Result:</h2>
+    <p>{{ result }}</p>
+
+    <h2>Container Metadata:</h2>
+    <p>Hostname: {{ metadata.hostname }}</p>
+    <p>IP: {{ metadata.ip }}</p>
+    <p>Container ID: {{ metadata.container_id }}</p>
+</body>
+</html>
