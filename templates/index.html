@@ -1,28 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- Root element of the HTML page, setting language to English -->
+<head> <!-- Head section contains meta-information about the document -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering on mobile devices -->
+    <title>Simple Calculator</title> <!-- Sets the title of the web page shown in the browser tab -->
 </head>
-<body>
-    <h1>Simple Calculator</h1>
+<body> <!-- Body section contains the visible content of the page -->
+    <h1>Simple Calculator</h1> <!-- Main heading of the page -->
     
     <!-- Form to input two numbers -->
-    <form method="POST">
-        <label for="num1">Number 1:</label>
-        <input type="text" id="num1" name="num1" required><br><br>
-        <label for="num2">Number 2:</label>
-        <input type="text" id="num2" name="num2" required><br><br>
-        <button type="submit">Add</button>
+    <form method="POST"> <!-- Start of the form, data is sent via POST method -->
+        <label for="num1">Number 1:</label> <!-- Label for the first input field -->
+        <input type="text" id="num1" name="num1" required><br><br> <!-- Input field for the first number, required -->
+        <label for="num2">Number 2:</label> <!-- Label for the second input field -->
+        <input type="text" id="num2" name="num2" required><br><br> <!-- Input field for the second number, required -->
+        <button type="submit">Add</button> <!-- Button to submit the form -->
     </form>
 
-    <h2>Result:</h2>
-    <p>{{ result }}</p>
+    <h2>Result:</h2> <!-- Heading for the result section -->
+    <p>{{ result }}</p> <!-- Displays the result variable passed from Flask -->
 
-    <h2>Container Metadata:</h2>
-    <p>Hostname: {{ metadata.hostname }}</p>
-    <p>IP: {{ metadata.ip }}</p>
-    <p>Container ID: {{ metadata.container_id }}</p>
+    <h2>Container Metadata:</h2> <!-- Heading for metadata section -->
+    <p>Hostname: {{ metadata.hostname }}</p> <!-- Displays the hostname passed from Flask -->
+    <p>IP: {{ metadata.ip }}</p> <!-- Displays the IP address passed from Flask -->
+    <p>Container ID: {{ metadata.container_id }}</p> <!-- Displays the Container ID passed from Flask -->
 </body>
 </html>

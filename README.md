@@ -28,9 +28,20 @@ A simple Flask application designed to demonstrate container metadata retrieval 
 
 ### Docker Setup
 
-1. **Build and Run**
+3. **Build and Run**
    ```bash
-   docker-compose up --build
+   docker-compose up -d --build
+   ```
+   The app will start at `http://localhost:5000`.
+
+4. **View Logs**
+   ```bash
+   docker-compose logs -f
+   ```
+
+5. **Stop the Application**
+   ```bash
+   docker-compose down
    ```
 
 ## API Usage

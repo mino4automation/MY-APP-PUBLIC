@@ -1,1 +1,1 @@
-Flask
+Flask  # Micro web framework for building the application

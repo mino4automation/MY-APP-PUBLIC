@@ -1,8 +1,8 @@
-version: '3.8'
+version: '3.8'  # Specify the Docker Compose file format version
 
-services:
-  my-app:
-    build: .
-    ports:
-      - "5000:5000"
-    restart: always
+services:  # Define the services that make up the application
+  my-app:  # Name of the service
+    build: .  # Build the image from the Dockerfile in the current directory
+    ports:  # Map ports between the host and the container
+      - "5000:5000"  # Map host port 5000 to container port 5000
+    restart: always  # Automatically restart the container if it stops
